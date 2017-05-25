@@ -9,26 +9,12 @@ var todoSchema = new mongoose.Schema({
   item: String,
 });
 
-var categorySchema = new mongoose.Schema({
+/*var categorySchema = new mongoose.Schema({
   title: String,
   todoList: [todoSchema],
-});
-
-var Category = mongoose.model('Category', categorySchema);
-var itemNew = Category({
-  title: 'work',
-  todoList: [{finish urgent task}],
-}).save(function(err){
-  if (err) throw err;
-  console.log('item saved');
-})
-
-/*var itemNew = Todo({item: 'task1'}).save(function(err){
-  if (err) throw err;
-  console.log('item saved');
 });*/
 
-//var data = [{item:"walk the dog"},{item:"buy cake"},{item:"study hard"}];
+var Todo = mongoose.model('Todo',todoSchema);
 var urlencodedParser = bodyParser.urlencoded({ extended: false });
 
 module.exports = function(app){
