@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700,800|Raleway:500,700');
+
+body{
+  font-family: 'Open Sans', sans-serif;
+}
+
+h2{
+  margin: 0;
+  padding: 0;
+}
+
+.title{
+  margin: 0;
+  color: #00c0b3;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.categories-list{
+  margin: 20px 0;
+  display: block;
+}
+
+.header-row{
+  padding-bottom: 15px;
+  border-bottom: 2px solid #00c0b3;
+}
+.add-category{
+  margin: 0;
+}
+.fa-plus-circle{
+  margin-top: 2px;
+  font-size: 29px;
+  color: #00c0b3;
+}
+
+.container{
+    position: relative;
+    width: 90%;
+    background: #eee;
+    margin: 20px auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.container form:after{
+    margin: 0;
+    content: '';
+    display: block;
+    clear: both;
+}
+
+input[type="text"]{
+    outline:none;
+    width: 70%;
+    padding: 20px;
+    background:rgba(000,000,000,.1);
+    border: 0;
+    float: left;
+    font-size: 20px;
+    color: #fff;
+}
+
+button.add-item{
+    padding: 20px;
+    width: 30%;
+    float: left;
+    background: #00c0b3;
+    border: 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    font-size: 17px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+    outline:none;
+}
+
+ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li{
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    font-family: arial;
+    font-size: 20px;
+    cursor: pointer;
+    letter-spacing: 1px;
+    color: #333;
+}
+
+.btns-container{
+  display: inline-block;
+  float: right;
+}
+
+button.edit-item, button.move-to-trash{
+  border: none;
+  background: transparent;
+  outline:none;
+  margin-left: 5px;
+}
+
+.fa-trash-o, .fa-pencil{
+  font-size: 25px;
+  color: #333;
+}
+
+.fa-trash-o:hover, .fa-pencil:hover{
+  color: #999;
+  cursor: pointer;
+}
+
+h1{
+    background: url(/logo.png) no-repeat center;
+    margin-bottom: 0;
+    text-indent: -10000px;
+}
