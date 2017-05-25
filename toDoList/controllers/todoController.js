@@ -18,13 +18,13 @@ var Todo = mongoose.model('Todo',todoSchema);
 var urlencodedParser = bodyParser.urlencoded({ extended: false });
 
 module.exports = function(app){
-  app.get('/todoList', function(req, res){
+  app.get('/', function(req, res){
     Todo.find({}, function(err, data){
       if(err) throw err;
       res.render('todoList', {todos: data});
     });
   });
-  app.get('/', function(req, res){
+  app.get('/categories', function(req, res){
     res.render('categories');
   });
   app.post('/todoList', urlencodedParser, function(req, res){
